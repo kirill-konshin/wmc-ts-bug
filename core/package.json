@@ -1,0 +1,33 @@
+{
+  "name": "web-modules-core",
+  "version": "0.0.0",
+  "main": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "module": "./es/index.js",
+  "type": "module",
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "clean": "rimraf .tscache es lib coverage",
+    "build": "rc-tsc --build",
+    "start": "npm run build -- --watch"
+  },
+  "author": "RingCentral",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "2.2.5",
+    "prop-types": "15.6.2",
+    "react": "16.8.6",
+    "react-bootstrap": "0.31.5"
+  },
+  "devDependencies": {
+    "@types/classnames": "2.2.6",
+    "@types/prop-types": "15.5.6",
+    "@types/react": "16.8.17",
+    "@types/react-bootstrap": "0.32.19",
+    "rimraf": "2.6.2",
+    "web-modules-build": "*",
+    "typescript": "3.6.3"
+  }
+}

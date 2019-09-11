@@ -1,0 +1,21 @@
+{
+  "extends": "web-modules-build/src/typescript/tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "composite": true,
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./.tscache/es",
+    "target": "es5",
+    "module": "es2015",
+    "outDir": "./es",
+    "declaration": true,
+    "declarationDir": "./es"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "src/**/*.spec.*"
+  ]
+}

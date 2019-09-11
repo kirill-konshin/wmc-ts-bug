@@ -1,0 +1,33 @@
+{
+  "extends": "web-modules-build/src/typescript/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./.tscache/tsconfig.tsbuildinfo",
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationDir": "./lib",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "web-modules-core": [
+        "../core"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "storybook/**/*.tsx"
+  ],
+  "references": [
+    {
+      "path": "../core"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2017",
+      "es2018.promise"
+    ],
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "noUnusedLocals": true
+  },
+  "exclude": [
+    ".git",
+    "node_modules",
+    "dist",
+    "lib",
+    "build"
+  ]
+}
